@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+   
+}
+#navbar{
+    display:flex;
+   
+    height:100px;
+    position: relative;
+}
+#logo img{
+    height:80px;
+    width:100px;
+
+}
+ul{
+    display:flex;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    list-style: none;
+    padding:15px;
+    margin: 8px;
+    font-size: 1.5rem;
+    color:white;
+    font-family: 'Zen Antique', serif;
+    
+}
+ul li a:hover{
+    border-radius: 8px;
+  color:black;
+  background-color: white;
+    
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.7;
+
+}
+/*Styling section area*/
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+   
+    height:400px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#home::before{
+    content:"";
+    background: url('spaghetti-1932466_960_720.jpg');
+    position:absolute;
+    height: 90%;
+    width:100%;
+    z-index:-1;
+    opacity:0.9;
+
+}
+.h-primary{
+    font-size: 1.9rem;
+    padding:12px;
+    color:white;
+    text-align: center;
+    font-family: 'Zen Antique', serif;
+}
+#home p{
+    font-weight: bolder;
+    font-size: 1.1rem;
+    font-family: 'Zen Antique', serif;
+}
+.btn{
+    height:50px;
+    width:150px;
+    font-size: 1.3rem;
+    border-radius: 19px;
+    border: brown;
+    background-color: brown;
+    color:white;
+    box-shadow:2rem;
+    font-weight: 8;
+    font-family: 'Zen Antique', serif;
+}
+.btn:hover{
+    background-color: rgb(224, 68, 68);
+}
+
+#services-container{
+    text-align: center;
+    height: 100px;
+    margin-top: 120px;;
+}
+#services-container h1{
+    
+   font-size:2.5rem;
+
+}
+.services{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.box{
+    border:2px solid black;
+    border-radius: 40px;
+    width:400px;
+    box-shadow: inset;
+
+}
+.box img{ 
+    height:200px;
+    width:250px;
+   justify-content: space-evenly;
+  
+   margin:10px;
+    
+}
+.box p{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color:brown;
+    text-decoration:underline;
+}
+
+
+/*client section*/
+
+#clients-section{
+    text-align: center;
+   
+    margin-top:300px;
+   
+}
+
+#clients-section h1{
+    font-size:2.5rem;
+ }
+ .clients{
+     display:flex;
+align-items: center;
+    justify-content:center;
+    align-content: center;
+    }
+ .box1{
+    width:400px;
+    }
+ .box1 img{ 
+     height:150px;
+     width:180px;
+    
+     }
+ .box1 p{
+     font-weight: bold;
+     font-size: 1.2rem;
+     color:brown;
+     text-decoration:underline;
+ }
+ footer{
+     background: black;
+     color:white;
+     padding:9px 20px;
+     text-align: center;
+ }
+
+ /*styling contact*/
+ #contact-container::before{
+     content:"";
+     background: url('telephone-586266_960_720.webp') no-repeat center center/cover;
+     position:absolute;
+     height:70%;
+     width:100%;
+     z-index:-1;
+     opacity:0.7;
+     left:0
+ }
+ #contact-container{
+   
+     text-align: center;
+    
+ }
+#contact-container h1{
+    text-align: center;
+font-size: 2.5rem;
+}
+.contact{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:34px;
+
+}
+.form-group{
+    margin:6px;
+    display: flex;
+}
+.contact label{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.contact input,.contact textarea{
+    font-size: 1.3rem;
+    padding:5px;
+    border-radius: 10px;
+    border:2px solid black;
+}
+
+
